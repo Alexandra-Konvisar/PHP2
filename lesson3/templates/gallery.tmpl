@@ -1,0 +1,19 @@
+{% include 'header.tmpl' %}
+<h1>{{ h1 }}</h1>
+
+<div class="gallery">
+    {% for photo in photos %}
+        <div class="image"><a href="{{ photo.src }}" class="galleryItem"><img src="{{ photo.small_src }}" alt="" title="{{ photo.name }}" width="100"></a></div>
+    {% endfor %}
+</div>
+<div class="clearfix"></div>
+<div class="form">
+    <form enctype="multipart/form-data" action="image-id.php" method="GET">
+        <br>
+        <p><b>Введите id фото:</b></p>
+        <input name="id" type="number" value="1" style="width: 40px;"><br>
+        <p><input type="submit" value="Показать"></p>
+    </form>
+</div>
+{% include 'footer.tmpl' %}
+
