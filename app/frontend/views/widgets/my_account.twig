@@ -1,0 +1,7 @@
+<div id="my-account-panel" class="my-account-panel">
+    {% if user.IUD %}
+        {% include 'widgets/user.twig' %}
+    {% else %}
+        {% include 'widgets/loginform.twig' %}
+    {% endif %}
+</div>
