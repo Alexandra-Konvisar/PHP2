@@ -1,0 +1,37 @@
+<div class="alert alert-secondary alert-dismissible fade show" role="alert">
+    {{ message }}
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<form action="/site/index" method="POST" class="w-50 m-auto">
+
+    {#<div class="form-group">#}
+        {#<label for="loginInput">User login</label>#}
+        {#<input type="text"#}
+               {#name="User[login]"#}
+               {#value="{{ model.login }}"#}
+               {#class="form-control"#}
+               {#id="loginInput"#}
+               {#autocomplete="off"#}
+               {#placeholder="Your login">#}
+        {#<small id="loginHelp" class="form-text text-danger">{{ model.errors.login }}</small>#}
+    {#</div>#}
+
+    {#<div class="form-group">#}
+        {#<label for="passwordInput">Password</label>#}
+        {#<input type="password"#}
+               {#name="User[password]"#}
+               {#value="{{ model.password }}"#}
+               {#class="form-control"#}
+               {#id="passwordInput"#}
+               {#placeholder="Your password">#}
+        {#<small id="passwordHelp" class="form-text text-danger">{{ model.errors.password }}</small>#}
+    {#</div>#}
+
+    {#<div class="text-center">#}
+        {#<button type="submit" class="btn btn-primary mb-2">load model data</button>#}
+    {#</div>#}
+</form>
